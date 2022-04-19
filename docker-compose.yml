@@ -88,7 +88,10 @@ services:
       - ./volumes/redis:/var/lib/redis
     restart: always
 
+#networks:
+#  nginx_proxy:
+#    external:
+#      name: ${NGINX_PROXY_NETWORK_NAME}
+
 networks:
   nginx_proxy:
-    external:
-      name: ${NGINX_PROXY_NETWORK_NAME}
